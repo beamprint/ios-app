@@ -27,6 +27,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     
     private var planeNode: SCNNode?
     private var imageNode: SCNNode?
+    private var assemblyNode: SCNNode?
     private var tiledpartsnode: SCNNode?
 
     
@@ -201,9 +202,28 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     
     @IBAction func onInsertModelButton(_ sender: Any) {
         print("insert model")
+        guard let shipScene = SCNScene(named: "/Models.scnassets/AssemblyParts/gearbox.stl"),
+            let shipNode = shipScene.rootNode.childNode(withName: "Onshape", recursively: false)
+            else { return }
+        //
+        
+        //        let url = Bundle.main.url(forResource: "Models.scnassets/AssemblyParts/Body.stl", withExtension: nil)!
+        //        let shipNode = try! BinarySTLParser.createNodeFromSTL(at: url, unit: .meter)
+        ///scene.rootNode.addChildNode(node)
+        
+        //        let shipNode = SCNNode(named: "Models.scnassets/AssemblyParts/Head.dae")
+        
+        
+        //shipNode.position = SCNVector3(0,0,0)
+        shipNode.position = imageNode!.position
+        shipNode.orientation = imageNode!.orientation
+        sceneView.scene.rootNode.addChildNode(shipNode)
+        self.assemblyNode = shipNode
+        print("added ship to view")
     }
     
     @IBAction func onTilePartsButton(_ sender: Any) {
+    self.assemblyNode!.removeFromParentNode()
         print("tile parts")
     }
     

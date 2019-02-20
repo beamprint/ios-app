@@ -37,7 +37,8 @@ extension Message {
             case .helpTapHoldRect:
                 return NSLocalizedString("Tap and hold to select stock.", comment: "")
             case .helpTapReleaseRect:
-                return NSLocalizedString("Release your finger to finalize your selection.", comment: "")
+          //      return NSLocalizedString("Release your finger to finalize your selection.", comment: "")
+                  return NSLocalizedString("Loading...", comment: "")
             case .errNoRect:
                 return NSLocalizedString("The stock couldn't be identified. Try moving your phone to another angle.", comment: "")
             case .helpImage:

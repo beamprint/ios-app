@@ -83,7 +83,10 @@
                                 <rect key="frame" x="23" y="576" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <state key="normal" title="Insert Model"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Insert Model">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="onInsertModelButton:" destination="MOP-cd-TFu" eventType="touchUpInside" id="m7k-Jo-duN"/>
                                 </connections>
@@ -92,7 +95,10 @@
                                 <rect key="frame" x="284" y="576" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <state key="normal" title="Start Job"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Start Job">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="onStartJobButton:" destination="MOP-cd-TFu" eventType="touchUpInside" id="F0v-N3-PlL"/>
                                 </connections>
@@ -101,7 +107,10 @@
                                 <rect key="frame" x="155" y="576" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <state key="normal" title="Tile Parts"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Tile Parts">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="onTilePartsButton:" destination="MOP-cd-TFu" eventType="touchUpInside" id="XhQ-bF-KPa"/>
                                 </connections>
